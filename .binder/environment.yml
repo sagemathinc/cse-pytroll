@@ -1,0 +1,53 @@
+name: pytroll
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - xarray
+  - dask
+  - distributed
+  - dask-kubernetes
+  - gcsfs
+  - intake
+  - intake-xarray
+  - zarr
+  - matplotlib
+  - numcodecs
+  - python-blosc
+  - lz4
+  - nomkl
+  - nbserverproxy
+  - jupyter
+  - jupyterlab
+  - jupyterlab_launcher
+  - jupyter_client
+  - ipywidgets
+  - graphviz
+  - nodejs
+  # pytroll dependencies
+  - satpy
+  # satpy dependencies
+  - pyresample
+  - pillow
+  - pyresample
+  - trollsift
+  - trollimage
+  - pykdtree
+  - pyspectral
+  - pyyaml
+  - h5py
+  - netcdf4
+  - pyorbital
+  - imageio
+  - imageio-ffmpeg
+  - cartopy
+  - metpy
+  - siphon
+  - pandas
+  #- gcsfs
+  - pip:
+    - kubernetes
+    - graphviz
+    # we install the stable package (see above) and not from the main branch
+    #- git+https://github.com/pytroll/satpy.git@main
